@@ -1,0 +1,55 @@
+{
+  "site_title": "阿东 AI 日报",
+  "brand_badge": "ADONG AI DAILY",
+  "subtitle": "一线 Agent 工程师的每日 AI 情报账本",
+  "author_name": "阿东玩 AI",
+  "author_url": "https://adongwanai.github.io/",
+  "author_intro": "我每天早上从 X 建设者推文、播客、GitHub Trending、HN、HF/arXiv 和 9 家中文科技源里去重筛一遍，挑出真正值得做 Agent 和大模型的人看的东西，顺手记几句自己的工程判断。不堆公关稿，不编瞎话。",
+  "repository": "adongwanai/adong-ai-daily",
+  "repository_url": "https://github.com/adongwanai/adong-ai-daily",
+  "base_url": "https://adongwanai.github.io/adong-ai-daily",
+  "feed_url": "https://adongwanai.github.io/adong-ai-daily/feed/atom.xml",
+  "links": [
+    { "label": "HF 论文站", "url": "https://adongwanai.github.io/hf-daily-papers/" },
+    { "label": "Follow RSI", "url": "https://adongwanai.github.io/follow-rsi/" },
+    { "label": "AgentGuide", "url": "https://github.com/adongwanai/AgentGuide" },
+    { "label": "adong-skills", "url": "https://github.com/adongwanai/adong-skills" }
+  ],
+  "enabled_groups": [
+    "cn-ai",
+    "builders-x",
+    "builders-podcasts",
+    "hf-papers",
+    "dev-hot",
+    "rss-curated"
+  ],
+  "focus": {
+    "topics": [
+      "Agent",
+      "Harness",
+      "VLA",
+      "具身智能",
+      "机器人",
+      "强化学习",
+      "Post-training",
+      "推理优化",
+      "开源",
+      "大模型",
+      "World Model",
+      "AI 编程"
+    ],
+    "blocked": [
+      "抽奖",
+      "优惠券",
+      "限时特惠",
+      "广告"
+    ]
+  },
+  "limits": {
+    "per_source_max": 25,
+    "candidate_pool_max": 100,
+    "selected_total_target": 40,
+    "per_category_min": 3,
+    "per_category_max": 7
+  }
+}

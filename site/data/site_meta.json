@@ -1,0 +1,38 @@
+{
+  "site_title": "阿东 AI 日报",
+  "brand_badge": "ADONG AI DAILY",
+  "subtitle": "一线 Agent 工程师的每日 AI 情报账本",
+  "author_name": "阿东玩 AI",
+  "author_url": "https://adongwanai.github.io/",
+  "author_intro": "我每天早上从 X 建设者推文、播客、GitHub Trending、HN、HF/arXiv 和 9 家中文科技源里去重筛一遍，挑出真正值得做 Agent 和大模型的人看的东西，顺手记几句自己的工程判断。不堆公关稿，不编瞎话。",
+  "repository_url": "https://github.com/adongwanai/adong-ai-daily",
+  "links": [
+    {
+      "label": "HF 论文站",
+      "url": "https://adongwanai.github.io/hf-daily-papers/"
+    },
+    {
+      "label": "Follow RSI",
+      "url": "https://adongwanai.github.io/follow-rsi/"
+    },
+    {
+      "label": "AgentGuide",
+      "url": "https://github.com/adongwanai/AgentGuide"
+    },
+    {
+      "label": "adong-skills",
+      "url": "https://github.com/adongwanai/adong-skills"
+    }
+  ],
+  "categories": [
+    "科研进展",
+    "技术突破",
+    "产品发布",
+    "融资并购",
+    "开源工具",
+    "重磅观点",
+    "行业动态",
+    "政策监管",
+    "产业观察"
+  ]
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="阿东 AI 日报 · 一线 Agent 工程师的每日多源 AI 情报账本与趋势判断" />
+  <title>阿东 AI 日报 · 每日多源情报账本</title>
+  <link rel="alternate" type="application/atom+xml" title="阿东 AI 日报 Atom Feed" href="feed/atom.xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand-wrap">
+        <a href="#/" class="brand-badge" id="nav-brand">ADONG AI DAILY</a>
+        <div class="nav-tabs" role="tablist">
+          <button class="nav-tab active" id="tab-daily" onclick="switchView('daily')">每日账本</button>
+          <button class="nav-tab" id="tab-archive" onclick="switchView('archive')">往期归档与全库检索</button>
+        </div>
+      </div>
+
+      <div class="actions">
+        <div id="ecosystem-links" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+        <a class="nav-link" href="feed/atom.xml" target="_blank" rel="noopener">RSS</a>
+        <a class="nav-link" id="repo-link" href="https://github.com/adongwanai/adong-ai-daily" target="_blank" rel="noopener">GitHub ↗</a>
+        <div class="theme-group" role="group" aria-label="主题切换">
+          <button class="theme-btn active" data-set-theme="light" onclick="setTheme('light')">白宣</button>
+          <button class="theme-btn" data-set-theme="paper" onclick="setTheme('paper')">暖纸</button>
+          <button class="theme-btn" data-set-theme="dark" onclick="setTheme('dark')">黑曜</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- VIEW 1: DAILY LEDGER -->
+    <div id="view-daily">
+      <div class="issue-strip">
+        <p class="author-colophon" id="author-colophon"></p>
+        <div class="date-nav">
+          <button class="step-btn" id="btn-prev" onclick="stepDay(1)">← 前一期</button>
+          <select class="date-select" id="date-select" aria-label="选择日报日期" onchange="goDate(this.value)"></select>
+          <button class="step-btn" id="btn-next" onclick="stepDay(-1)">后一期 →</button>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="hero-header">
+          <div>
+            <h1 class="hero-title" id="hero-title">加载中…</h1>
+            <p class="hero-sub" id="hero-sub"></p>
+          </div>
+          <div class="telemetry-pills" id="hero-stats"></div>
+        </div>
+
+        <div class="take-box">
+          <div class="take-label">⚡ 今日 30 秒主线判断</div>
+          <p class="take-text" id="daily-take"></p>
+        </div>
+      </section>
+
+      <section class="section" id="sec-picks">
+        <div class="section-head">
+          <h2 class="section-title">🏆 今日必读 Top Picks</h2>
+          <span class="section-hint">综合跨源共振热度与一线工程相关性精选</span>
+        </div>
+        <div class="bento-grid" id="bento-picks"></div>
+      </section>
+
+      <section class="section" id="sec-insights">
+        <div class="section-head">
+          <h2 class="section-title">🔭 阿东今日趋势判断</h2>
+          <span class="section-hint">点击角标 [N001] 可直接跳转高亮对应事实源</span>
+        </div>
+        <div class="insights-grid" id="insights-grid"></div>
+      </section>
+
+      <section class="section" id="sec-ledger">
+        <div class="section-head">
+          <h2 class="section-title">🗂️ 全量分类情报账本</h2>
+          <span class="section-hint" id="filter-count-label"></span>
+        </div>
+
+        <div class="filter-panel">
+          <div class="filter-row" id="cat-pills"></div>
+          <div class="search-wrap">
+            <div class="filter-row" id="tier-pills">
+              <button class="pill-btn active" data-tier="all" onclick="setTier('all')">全部信源</button>
+              <button class="pill-btn" data-tier="resonance" onclick="setTier('resonance')">🔥 多源共振</button>
+              <button class="pill-btn" data-tier="builders" onclick="setTier('builders')">🧑‍💻 X建设者·播客</button>
+              <button class="pill-btn" data-tier="papers" onclick="setTier('papers')">📄 论文·官方</button>
+              <button class="pill-btn" data-tier="opensource" onclick="setTier('opensource')">💻 GitHub·HN开源</button>
+              <button class="pill-btn" data-tier="media" onclick="setTier('media')">📰 中文科技媒体</button>
+            </div>
+            <input type="search" id="search-box" class="search-input" placeholder="筛选当日模型、框架、公司、关键词（按 / 聚焦）..." oninput="renderLedger()" />
+          </div>
+        </div>
+
+        <div id="ledger-container"></div>
+      </section>
+
+      <details class="telemetry-box">
+        <summary id="telemetry-summary">📡 查看底层多源采集健康度与缓存状态</summary>
+        <div class="source-grid" id="telemetry-grid"></div>
+      </details>
+    </div>
+
+    <!-- VIEW 2: ARCHIVE & FULL SEARCH -->
+    <div id="view-archive" style="display:none;">
+      <section class="hero">
+        <div class="hero-header">
+          <div>
+            <h1 class="hero-title">往期归档与全库检索</h1>
+            <p class="hero-sub" id="archive-stats"></p>
+          </div>
+        </div>
+        <div class="filter-panel">
+          <input type="search" id="archive-search" class="search-input" placeholder="跨日期搜索全部历史动态与阿东判断：输入 Agent / Harness / VLA / MCP / 芯片 / 机构名..." oninput="renderArchive()" />
+        </div>
+      </section>
+
+      <div id="archive-search-results"></div>
+
+      <section class="section" id="archive-days-sec">
+        <div class="section-head">
+          <h2 class="section-title">📅 按期浏览</h2>
+          <span class="section-hint">点击任意一期查看当日完整账本</span>
+        </div>
+        <div class="archive-issues-grid" id="archive-issues-grid"></div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div>
+        由 <a id="footer-author" href="https://adongwanai.github.io/" target="_blank" rel="noopener"><strong>阿东玩 AI</strong></a> 维护 · 小红书 / 微信公众号同名：<strong>阿东玩AI</strong>
+      </div>
+      <div class="footer-links" id="footer-links"></div>
+    </footer>
+  </main>
+</body>
+</html>

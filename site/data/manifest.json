@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-11-27 16:36:03",
+  "total_days": 1,
+  "total_items": 41,
+  "latest_date": "2026-11-27",
+  "days": [
+    {
+      "date": "2026-11-27",
+      "weekday": "周五",
+      "update_time": "2026-11-27 15:57:20",
+      "daily_take": "今天最值得盯紧的三条线：一是 Agent 工程重心彻底从“提示词编排”下沉到精简 Harness、跨端协议与真实指标闭环——20 个 Agent 组队跑 350 轮实验直接刷掉 ClickBench 纪录，GitHub 官方也端出了跨设备会话协议；二是具身与物理 AI 集中反击“通用大模型降维打击论”，空间记忆（LingBot-Map 2.0）与演示提速（RePace）成为真问题；三是底层系统开始硬核化，MLC AI 直接用 Lean 在 PTX 层形式化验证 Blackwell 内核并抓出 3 个同步 Bug。",
+      "selected_count": 41,
+      "raw_articles": 315,
+      "multi_source_clusters": 28,
+      "insight_count": 5
+    }
+  ]
+}
