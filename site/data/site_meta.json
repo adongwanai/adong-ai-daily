@@ -8,6 +8,10 @@
   "repository_url": "https://github.com/adongwanai/adong-ai-daily",
   "links": [
     {
+      "label": "阿东 IP 工作台",
+      "url": "https://github.com/adongwanai/adong-media-desk"
+    },
+    {
       "label": "HF 论文站",
       "url": "https://adongwanai.github.io/hf-daily-papers/"
     },

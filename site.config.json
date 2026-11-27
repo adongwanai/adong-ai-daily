@@ -10,6 +10,7 @@
   "base_url": "https://adongwanai.github.io/adong-ai-daily",
   "feed_url": "https://adongwanai.github.io/adong-ai-daily/feed/atom.xml",
   "links": [
+    { "label": "阿东 IP 工作台", "url": "https://github.com/adongwanai/adong-media-desk" },
     { "label": "HF 论文站", "url": "https://adongwanai.github.io/hf-daily-papers/" },
     { "label": "Follow RSI", "url": "https://adongwanai.github.io/follow-rsi/" },
     { "label": "AgentGuide", "url": "https://github.com/adongwanai/AgentGuide" },

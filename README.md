@@ -49,6 +49,7 @@ python3 -m http.server 8080 --directory site
 
 我是 **阿东（Adong）**，平时主要折腾 AI Agent、RSI（递归自我改进）、Vibe Coding 与工程落地：
 
+- **阿东 IP 工作台（本地图文/口播/视频创作台）**：[github.com/adongwanai/adong-media-desk](https://github.com/adongwanai/adong-media-desk)
 - **HF 每日论文深读账本站**：[adongwanai.github.io/hf-daily-papers](https://adongwanai.github.io/hf-daily-papers/)
 - **Follow RSI 实证追踪库**：[adongwanai.github.io/follow-rsi](https://adongwanai.github.io/follow-rsi/)
 - **AI Agent 学习与面试指南**：[github.com/adongwanai/AgentGuide](https://github.com/adongwanai/AgentGuide)
