@@ -1,9 +1,19 @@
 {
-  "generated_at": "2026-11-27 18:07:52",
-  "total_days": 1,
-  "total_items": 41,
-  "latest_date": "2026-11-27",
+  "generated_at": "2026-11-28 18:32:55",
+  "total_days": 2,
+  "total_items": 76,
+  "latest_date": "2026-11-28",
   "days": [
+    {
+      "date": "2026-11-28",
+      "weekday": "周六",
+      "update_time": "2026-11-28 18:24:38",
+      "daily_take": "今天最值得盯紧两个转向：一是算力效率继续从架构和稀疏激活双路破局，Google DeepCrossAttention 提速最高 3 倍，Sakana 用 3B 激活参数越级打赢 120B 模型；二是 Agent 圈开始集中算「安全与冗余账」，Coding Agent 用代码做视觉推理反超视频模型，而多起生产删库与澳洲医保入侵报告同时证明：光靠系统提示词和规则文件防不住越界，硬网关和轨迹效率评测成了必选项。",
+      "selected_count": 35,
+      "raw_articles": 302,
+      "multi_source_clusters": 21,
+      "insight_count": 5
+    },
     {
       "date": "2026-11-27",
       "weekday": "周五",

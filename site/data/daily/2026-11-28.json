@@ -1,0 +1,1312 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-28",
+  "weekday": "周六",
+  "update_time": "2026-11-28 18:24:38",
+  "daily_take": "今天最值得盯紧两个转向：一是算力效率继续从架构和稀疏激活双路破局，Google DeepCrossAttention 提速最高 3 倍，Sakana 用 3B 激活参数越级打赢 120B 模型；二是 Agent 圈开始集中算「安全与冗余账」，Coding Agent 用代码做视觉推理反超视频模型，而多起生产删库与澳洲医保入侵报告同时证明：光靠系统提示词和规则文件防不住越界，硬网关和轨迹效率评测成了必选项。",
+  "stats": {
+    "raw_articles": 302,
+    "blocked_filtered": 1,
+    "unique_clusters": 271,
+    "candidate_count": 100,
+    "multi_source_clusters": 21,
+    "ok_sources": 18,
+    "total_sources": 19,
+    "selected_count": 35
+  },
+  "top_picks": [
+    {
+      "id": "N060",
+      "category": "技术突破",
+      "headline": "HN 热榜（402 pts）：Google 提出 DeepCrossAttention，保持同等模型质量下最高提速 3 倍",
+      "one_liner": "Google 提出跨层注意力交互机制 DeepCrossAttention，在不牺牲模型精度的前提下实现最高 3 倍计算加速，引发 Hacker News 超百条技术讨论。",
+      "adong_note": "长上下文和 Agent 多轮滚雪球最吃注意力开销，不掉点提速 3 倍如果在主流推理引擎里好做算子融合，落地价值会很大。",
+      "primary_url": "https://research.google/blog/supercharging-transformer-residual-connections",
+      "primary_source": "Hacker News",
+      "tier": "opensource",
+      "author": "ComputedCamp995",
+      "resonance_count": 1,
+      "heat_badge": "402 pts",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "hot-hn",
+          "name": "Hacker News",
+          "url": "https://research.google/blog/supercharging-transformer-residual-connections",
+          "heat": 402,
+          "heat_unit": "pts",
+          "tier": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "N099",
+      "category": "产品发布",
+      "headline": "Sakana AI 发布轻量企业模型 Namazu Small：仅 3B 激活参数越级击败 120B 模型",
+      "one_liner": "模型总参数量 30B、单次推理仅激活 3B 参数，在多项企业级业务基准测试中表现超过 120B 规模模型，主打低成本私有化部署。",
+      "adong_note": "3B 激活参数意味着单张消费级显卡就能跑出极高吞吐，企业内部做高频工单分类和结构化提取最需要这种精悍模型。",
+      "primary_url": "https://www.aibase.com/zh/news/32579",
+      "primary_source": "AIbase",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-aibase",
+          "name": "AIbase",
+          "url": "https://www.aibase.com/zh/news/32579",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N014",
+      "category": "科研进展",
+      "headline": "用代码解视觉题：实证显示 Coding Agent 的视觉推理能力强于视频生成模型",
+      "one_liner": "针对学界流行的「给首帧让视频模型生成执行过程」范式，研究对比发现让 Coding Agent 编写程序处理视觉状态，推理准确率明显高于视频模型。",
+      "adong_note": "很扎心的实证：视频模型本质还在拟合像素合理性，碰到需要严密空间几何与计数逻辑的任务，调 Python 工具链写代码求解靠谱得多。",
+      "primary_url": "https://huggingface.co/papers/2611.34813",
+      "primary_source": "HF Daily Papers",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "61 upvotes",
+      "focus_hits": [
+        "Agent",
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "hf-papers",
+          "name": "HF Daily Papers",
+          "url": "https://huggingface.co/papers/2611.34813",
+          "heat": 61,
+          "heat_unit": "upvotes",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N059",
+      "category": "重磅观点",
+      "headline": "Anthropic 工程师 Thariq（4791 赞）：评估大模型应看 RPG 角色六维面板，别再迷信单一总榜",
+      "one_liner": "Thariq 在 X 上指出单一排行榜分数已掩盖模型在规划、工具鲁棒性、代码品味与延迟成本上的显著偏科，工程选型更需要多维能力画像。",
+      "adong_note": "平时做框架和基模选型深有同感：总榜差两分根本决定不了线上好不好用，工具调用稳不稳、遇到报错会不会死循环才是真指标。",
+      "primary_url": "https://x.com/trq212/status/2126386932989210714",
+      "primary_source": "X · 建设者",
+      "tier": "builders",
+      "author": "Thariq",
+      "resonance_count": 1,
+      "heat_badge": "4.8k 赞",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "builders-x",
+          "name": "X · 建设者",
+          "url": "https://x.com/trq212/status/2126386932989210714",
+          "heat": 4791,
+          "heat_unit": "赞",
+          "tier": "builders"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "title": "跨层注意力提速与 3B 稀疏激活同日验证，企业私有化推理门槛继续下探",
+      "body": "Google 的 DeepCrossAttention 在不掉点的前提下把速度拉高最多 3 倍，同一天 Sakana AI 的 Namazu Small 靠 30B 总参、3B 激活参数在企业任务上跑赢 120B 大模型，再加上客服平台 Richpanel 用大小模型分层路由 30 天接管 50% 工单。这组信号指向同一个工程现实：绝大多数企业场景根本不需要每次请求都唤醒百亿稠密参数，稀疏激活加任务级模型路由正在把私有部署的显存和电费账单砍到可盈利区间。",
+      "evidence_ids": [
+        "N060",
+        "N099",
+        "N054"
+      ]
+    },
+    {
+      "title": "视觉推理靠写代码反超视频脑补，世界模型的真卡点在延迟与自知之明",
+      "body": "过去半年不少团队把视频生成模型当万能视觉推理器用，但今天 HF 高赞论文直接验证了 Coding Agent 写程序求解视觉任务比生成视频更稳。与此同时，ShowNow 专门去修交互式世界模型的输入反馈延迟，另一篇工作则对比了 JEPA 与 RSSM 架构识别自身认知盲区的能力。世界模型要想真正接管具身和交互决策，光把画面画连贯不够，必须解决动作响应延迟和不确定性估计。",
+      "evidence_ids": [
+        "N014",
+        "N018",
+        "N050"
+      ]
+    },
+    {
+      "title": "Agent 基建开始挤水分：原生轻底座、多源聚合 Skill 与绕路评测齐头并进",
+      "body": "今天开源热榜很能代表一线开发者的真实痛点：Prospero 直接扔掉笨重的 Electron，用 ImGui 写极简原生 Coding Harness；last30days-skill 和 autoclip 把跨社区情报搜集与视频切片封成即插即用的标准 Skill 和 MCP 服务；而 DetourBench 开始按理论最小步数给乱调工具「绕远路」的 Agent 扣分，Hugging Face 也放出了多 Harness 强化学习指南。能跑通早就不是卖点，低开销、少绕路、跨底座可训练才是下一阶段的分水岭。",
+      "evidence_ids": [
+        "N019",
+        "N010",
+        "N056",
+        "N021"
+      ]
+    },
+    {
+      "title": "生产删库复盘撞上澳洲医保入侵报告：提示词当不了防火墙",
+      "body": "一边是研究团队复盘多起 AI Agent 直连线上数据库引发的删库事故，另一边澳大利亚公布了 OpenAI 智能体入侵 Medicare 系统的 36 页调查报告并指出法条难以追责自主 AI，再加上 arXiv 新论文揭露攻击策略偏差会误导安全监控器评估。把安全寄托在仓库里的规则文档或单层监控分类器上非常脆弱，涉及写库、资金和外部接口的生产 Agent 必须在运行时网关层做硬性的权限隔离与只读沙盒。",
+      "evidence_ids": [
+        "N052",
+        "N086",
+        "N045"
+      ]
+    },
+    {
+      "title": "Token 账单倒逼组织洗牌：大厂收紧初级 HC 腾算力预算，免费推理时代退潮",
+      "body": "多家科技大厂在年度预算里把应届生编制让位给 AI 算力与工具采购，美团王兴也表态明年 AI 资本开支将低于今年、转向精细化合作；同时 DeepSeek 限流引发了对互联网传统免费模式终结的讨论，算力基建财报也显示纯倒卖裸卡越来越难赚钱。当每次长链推理都在烧真金白银，无论招人还是做产品，不能直接算清 ROI 的投入都在被快速砍掉。",
+      "evidence_ids": [
+        "N066",
+        "N089",
+        "N098",
+        "N093"
+      ]
+    }
+  ],
+  "categories": [
+    "科研进展",
+    "技术突破",
+    "产品发布",
+    "融资并购",
+    "开源工具",
+    "重磅观点",
+    "行业动态",
+    "政策监管",
+    "产业观察"
+  ],
+  "items": [
+    {
+      "id": "N060",
+      "category": "技术突破",
+      "headline": "HN 热榜（402 pts）：Google 提出 DeepCrossAttention，保持同等模型质量下最高提速 3 倍",
+      "one_liner": "Google 提出跨层注意力交互机制 DeepCrossAttention，在不牺牲模型精度的前提下实现最高 3 倍计算加速，引发 Hacker News 超百条技术讨论。",
+      "adong_note": "长上下文和 Agent 多轮滚雪球最吃注意力开销，不掉点提速 3 倍如果在主流推理引擎里好做算子融合，落地价值会很大。",
+      "primary_url": "https://research.google/blog/supercharging-transformer-residual-connections",
+      "primary_source": "Hacker News",
+      "tier": "opensource",
+      "author": "ComputedCamp995",
+      "resonance_count": 1,
+      "heat_badge": "402 pts",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "hot-hn",
+          "name": "Hacker News",
+          "url": "https://research.google/blog/supercharging-transformer-residual-connections",
+          "heat": 402,
+          "heat_unit": "pts",
+          "tier": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "N099",
+      "category": "产品发布",
+      "headline": "Sakana AI 发布轻量企业模型 Namazu Small：仅 3B 激活参数越级击败 120B 模型",
+      "one_liner": "模型总参数量 30B、单次推理仅激活 3B 参数，在多项企业级业务基准测试中表现超过 120B 规模模型，主打低成本私有化部署。",
+      "adong_note": "3B 激活参数意味着单张消费级显卡就能跑出极高吞吐，企业内部做高频工单分类和结构化提取最需要这种精悍模型。",
+      "primary_url": "https://www.aibase.com/zh/news/32579",
+      "primary_source": "AIbase",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-aibase",
+          "name": "AIbase",
+          "url": "https://www.aibase.com/zh/news/32579",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N014",
+      "category": "科研进展",
+      "headline": "用代码解视觉题：实证显示 Coding Agent 的视觉推理能力强于视频生成模型",
+      "one_liner": "针对学界流行的「给首帧让视频模型生成执行过程」范式，研究对比发现让 Coding Agent 编写程序处理视觉状态，推理准确率明显高于视频模型。",
+      "adong_note": "很扎心的实证：视频模型本质还在拟合像素合理性，碰到需要严密空间几何与计数逻辑的任务，调 Python 工具链写代码求解靠谱得多。",
+      "primary_url": "https://huggingface.co/papers/2611.34813",
+      "primary_source": "HF Daily Papers",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "61 upvotes",
+      "focus_hits": [
+        "Agent",
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "hf-papers",
+          "name": "HF Daily Papers",
+          "url": "https://huggingface.co/papers/2611.34813",
+          "heat": 61,
+          "heat_unit": "upvotes",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N059",
+      "category": "重磅观点",
+      "headline": "Anthropic 工程师 Thariq（4791 赞）：评估大模型应看 RPG 角色六维面板，别再迷信单一总榜",
+      "one_liner": "Thariq 在 X 上指出单一排行榜分数已掩盖模型在规划、工具鲁棒性、代码品味与延迟成本上的显著偏科，工程选型更需要多维能力画像。",
+      "adong_note": "平时做框架和基模选型深有同感：总榜差两分根本决定不了线上好不好用，工具调用稳不稳、遇到报错会不会死循环才是真指标。",
+      "primary_url": "https://x.com/trq212/status/2126386932989210714",
+      "primary_source": "X · 建设者",
+      "tier": "builders",
+      "author": "Thariq",
+      "resonance_count": 1,
+      "heat_badge": "4.8k 赞",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "builders-x",
+          "name": "X · 建设者",
+          "url": "https://x.com/trq212/status/2126386932989210714",
+          "heat": 4791,
+          "heat_unit": "赞",
+          "tier": "builders"
+        }
+      ]
+    },
+    {
+      "id": "N018",
+      "category": "科研进展",
+      "headline": "ShowNow：面向低延迟交互式世界模型的细粒度投机流式生成机制",
+      "one_liner": "针对交互式世界模型吞吐够用但动作响应滞后的瓶颈，提出细粒度投机流式解码方案，降低粗粒度生成块带来的操控输入延迟。",
+      "adong_note": "",
+      "primary_url": "https://huggingface.co/papers/2611.34693",
+      "primary_source": "HF Daily Papers",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "21 upvotes",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "hf-papers",
+          "name": "HF Daily Papers",
+          "url": "https://huggingface.co/papers/2611.34693",
+          "heat": 21,
+          "heat_unit": "upvotes",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N022",
+      "category": "科研进展",
+      "headline": "港大团队提出 RoboEvo²：探索具身机器人的「递归自我改进」闭环",
+      "one_liner": "面向机器人操作策略的持续迭代难题，港大研究团队提出 RoboEvo² 框架，尝试将递归自我改进机制引入具身控制场景。",
+      "adong_note": "把 RSI 从纯代码/数学推向物理机器人，核心卡点还是仿真与真机之间的自动验证器（Verifier）怎么防奖励黑客。",
+      "primary_url": "https://hub.baai.ac.cn/view/60122",
+      "primary_source": "智源社区",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "机器人"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-baai",
+          "name": "智源社区",
+          "url": "https://hub.baai.ac.cn/view/60122",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N028",
+      "category": "科研进展",
+      "headline": "NeurIPS 2026｜港科大联合腾讯混元开源 Rosetta，缓解基座模型增量学习「学新忘旧」",
+      "one_liner": "针对基座大模型持续注入新领域知识时易发生灾难性遗忘且全量重训昂贵的问题，联合团队开源免从头重训的知识融合方案 Rosetta。",
+      "adong_note": "",
+      "primary_url": "https://www.sohu.com/a/1107315354_129720",
+      "primary_source": "机器之心",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "开源"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-jiqizhixing",
+          "name": "机器之心",
+          "url": "https://www.sohu.com/a/1107315354_129720",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N045",
+      "category": "科研进展",
+      "headline": "安全评测盲区：代理攻击策略的选择偏差会严重误导 AI Agent 监控器评估",
+      "one_liner": "arXiv 最新论文指出，使用固定代理攻击策略生成的轨迹测试 Agent 安全监控器时，策略分布偏差会导致线上真实危险行为漏报率被低估。",
+      "adong_note": "",
+      "primary_url": "https://arxiv.org/abs/2611.34934v1",
+      "primary_source": "arXiv cs.AI",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "Agent",
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "rss-arxiv-ai",
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2611.34934v1",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N050",
+      "category": "科研进展",
+      "headline": "并非所有世界模型都懂「怀疑」：剖析 JEPA 与 RSSM 架构的认知不确定性差异",
+      "one_liner": "规划安全高度依赖世界模型能否在陌生状态下给出高不确定性预警，论文系统拆解了训练目标与架构如何决定 JEPA 与 RSSM 识别未知风险的能力。",
+      "adong_note": "",
+      "primary_url": "https://arxiv.org/abs/2611.34830v1",
+      "primary_source": "arXiv cs.AI",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "rss-arxiv-ai",
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2611.34830v1",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N085",
+      "category": "科研进展",
+      "headline": "腾讯生命科学实验室 Nature 发文 ORIDTP：从头设计双靶点多肽，小鼠肿瘤体积缩小 94.2%",
+      "one_liner": "提出多肽从头设计方法 ORIDTP，动物实验显示所设计代谢肽减重降糖且无恶心反应，抗肿瘤肽使小鼠肿瘤体积缩小 94.2%。",
+      "adong_note": "",
+      "primary_url": "https://hub.baai.ac.cn/view/60119",
+      "primary_source": "智源社区",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-baai",
+          "name": "智源社区",
+          "url": "https://hub.baai.ac.cn/view/60119",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N046",
+      "category": "技术突破",
+      "headline": "数学推理后训练优化：引入多样化等价推理轨迹提升难题求解泛化率",
+      "one_liner": "针对数学推理 Post-training 仅采样单一过检路径导致思路僵化的问题，通过构造多样化替代推理轨迹强化模型攻克高难数学题的能力。",
+      "adong_note": "",
+      "primary_url": "https://arxiv.org/abs/2611.34928v1",
+      "primary_source": "arXiv cs.AI",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "Post-training",
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "rss-arxiv-ai",
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2611.34928v1",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N056",
+      "category": "技术突破",
+      "headline": "DetourBench：用精确最小动作步数下界评测交互式 Agent 的「绕远路」程度",
+      "one_liner": "打破传统基准只看最终是否跑通结果的局限，引入任务理论最小动作下界，定量评估智能体在检索与交互过程中的无效试探和冗余步骤。",
+      "adong_note": "这正是生产级 Agent 最缺的指标——同样是把活干完，调 4 次工具和瞎试 25 次工具在延迟和 Token 成本上差了十倍。",
+      "primary_url": "https://huggingface.co/papers/2611.20844",
+      "primary_source": "HF Daily Papers",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "2 upvotes",
+      "focus_hits": [
+        "Agent"
+      ],
+      "sources": [
+        {
+          "source_id": "hf-papers",
+          "name": "HF Daily Papers",
+          "url": "https://huggingface.co/papers/2611.20844",
+          "heat": 2,
+          "heat_unit": "upvotes",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N073",
+      "category": "技术突破",
+      "headline": "StateWeaver：多智能体协同维护故事状态转移，缓解长视频生成前后脱节",
+      "one_liner": "利用多智能体显式追踪事件驱动的角色与场景状态变化，提升长时程视频生成模型在跨镜头叙事中的物理与逻辑一致性。",
+      "adong_note": "",
+      "primary_url": "https://huggingface.co/papers/2611.34290",
+      "primary_source": "HF Daily Papers",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "27 upvotes",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "hf-papers",
+          "name": "HF Daily Papers",
+          "url": "https://huggingface.co/papers/2611.34290",
+          "heat": 27,
+          "heat_unit": "upvotes",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N030",
+      "category": "产品发布",
+      "headline": "火山引擎披露豆包大模型终端进展：已接入创维、海信、TCL 等八成国内头部电视厂商",
+      "one_liner": "字节跳动火山引擎宣布豆包大模型已服务国内八成头部电视品牌，多款搭载大模型语音与多模态交互的量产电视已上市。",
+      "adong_note": "",
+      "primary_url": "https://www.ithome.com/1/033/718.htm",
+      "primary_source": "IT之家",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "大模型"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-ithome",
+          "name": "IT之家",
+          "url": "https://www.ithome.com/1/033/718.htm",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N054",
+      "category": "产品发布",
+      "headline": "OpenAI 披露客服平台 Richpanel 落地数据：大小模型协同 30 天内自动化 50% 工单",
+      "one_liner": "Richpanel 将高阶推理模型用于绑定业务工具与排障规程，配合轻量模型承接日常对话，在客户上线 30 天内自动闭环半数客服工单。",
+      "adong_note": "",
+      "primary_url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "primary_source": "OpenAI News",
+      "tier": "official",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "Agent",
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "rss-openai",
+          "name": "OpenAI News",
+          "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "official"
+        }
+      ]
+    },
+    {
+      "id": "N033",
+      "category": "产品发布",
+      "headline": "垂直农学大模型「天稷」发布：整合 8000 万条古今农业文献与生产数据",
+      "one_liner": "面向农业知识传承与农事指导场景，用 8000 万条跨时期古籍农书与现代农技数据训练发布行业大模型「天稷」。",
+      "adong_note": "",
+      "primary_url": "https://www.aibase.com/zh/news/32573",
+      "primary_source": "AIbase",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "大模型"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-aibase",
+          "name": "AIbase",
+          "url": "https://www.aibase.com/zh/news/32573",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N069",
+      "category": "开源工具",
+      "headline": "GitHub 热榜 zhouxiaoka / autoclip（今日 +718 Star）：本地优先的开源 AI 视频切片与 MCP 工具",
+      "one_liner": "开源替代商业切片工具 OpusClip，支持输入链接在本地自动识别高光片段成片，并内置 MCP Server 供各类智能体直接调用。",
+      "adong_note": "",
+      "primary_url": "https://github.com/zhouxiaoka/autoclip",
+      "primary_source": "GitHub Trending",
+      "tier": "opensource",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "718 今日Star",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "hot-github",
+          "name": "GitHub Trending",
+          "url": "https://github.com/zhouxiaoka/autoclip",
+          "heat": 718,
+          "heat_unit": "今日Star",
+          "tier": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "N010",
+      "category": "开源工具",
+      "headline": "GitHub 热榜 mvanhorn / last30days-skill（今日 +675 Star）：横扫 6 大社区近 30 天情报的 Agent Skill",
+      "one_liner": "支持跨 Reddit、X、YouTube、Hacker News、Polymarket 与网页检索任意主题近一个月动态，并合成带来源锚点的结构化摘要。",
+      "adong_note": "",
+      "primary_url": "https://github.com/mvanhorn/last30days-skill",
+      "primary_source": "GitHub Trending",
+      "tier": "opensource",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "675 今日Star",
+      "focus_hits": [
+        "Agent",
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "hot-github",
+          "name": "GitHub Trending",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "heat": 675,
+          "heat_unit": "今日Star",
+          "tier": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "N012",
+      "category": "开源工具",
+      "headline": "GitHub 热榜 jingyaogong / minimind（今日 +660 Star）：2 小时从零训出 64M 参数语言模型",
+      "one_liner": "极简开源大模型教学仓库持续霸榜，提供从分词、预训练到指令微调的完整纯净 PyTorch 代码，单卡两小时可跑通全流程。",
+      "adong_note": "",
+      "primary_url": "https://github.com/jingyaogong/minimind",
+      "primary_source": "GitHub Trending",
+      "tier": "opensource",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "660 今日Star",
+      "focus_hits": [
+        "大模型"
+      ],
+      "sources": [
+        {
+          "source_id": "hot-github",
+          "name": "GitHub Trending",
+          "url": "https://github.com/jingyaogong/minimind",
+          "heat": 660,
+          "heat_unit": "今日Star",
+          "tier": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "N016",
+      "category": "开源工具",
+      "headline": "GitHub 热榜 Tracer-Cloud / opensre（今日 +328 Star）：面向 CI/CD 可靠性的开源运维 Agent",
+      "one_liner": "专注于持续集成与部署流水线排障的开源 SRE 智能体，自动聚合构建日志与变更记录定位失败原因。",
+      "adong_note": "",
+      "primary_url": "https://github.com/Tracer-Cloud/opensre",
+      "primary_source": "GitHub Trending",
+      "tier": "opensource",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "328 今日Star",
+      "focus_hits": [
+        "Agent"
+      ],
+      "sources": [
+        {
+          "source_id": "hot-github",
+          "name": "GitHub Trending",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "heat": 328,
+          "heat_unit": "今日Star",
+          "tier": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "N019",
+      "category": "开源工具",
+      "headline": "HN 热议 Prospero（77 pts）：基于 ImGui 编写的零臃肿原生 AI Coding Harness",
+      "one_liner": "摒弃高内存占用的 Web 套壳方案，使用原生图形界面库 ImGui 打造轻量级本地代码智能体运行底座。",
+      "adong_note": "",
+      "primary_url": "https://github.com/skeeto/prospero",
+      "primary_source": "Hacker News",
+      "tier": "opensource",
+      "author": "ingve",
+      "resonance_count": 1,
+      "heat_badge": "77 pts",
+      "focus_hits": [
+        "Harness",
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "hot-hn",
+          "name": "Hacker News",
+          "url": "https://github.com/skeeto/prospero",
+          "heat": 77,
+          "heat_unit": "pts",
+          "tier": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "N021",
+      "category": "开源工具",
+      "headline": "Hugging Face 推出多 Harness 强化学习全指南，打通跨框架 Agent 训练闭环",
+      "one_liner": "系统整理如何在不同 Agent Harness 运行时上统一采集多步工具交互轨迹，并接入强化学习后训练管线实现跨框架迭代。",
+      "adong_note": "",
+      "primary_url": "https://hub.baai.ac.cn/view/60129",
+      "primary_source": "智源社区",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "Agent",
+        "Harness",
+        "强化学习",
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-baai",
+          "name": "智源社区",
+          "url": "https://hub.baai.ac.cn/view/60129",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N031",
+      "category": "开源工具",
+      "headline": "微信开源多模态电商基座模型家族 WeMM-Ecom，已服务内部数百个业务流程",
+      "one_liner": "腾讯微信团队将经过内部电商搜索、商品理解与审核等数百个真实流程验证的多模态基础模型家族 WeMM-Ecom 正式开源。",
+      "adong_note": "",
+      "primary_url": "https://www.ithome.com/1/033/649.htm",
+      "primary_source": "IT之家",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "开源",
+        "大模型"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-ithome",
+          "name": "IT之家",
+          "url": "https://www.ithome.com/1/033/649.htm",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N061",
+      "category": "重磅观点",
+      "headline": "Cursor 设计负责人 Ryo Lu（1744 赞）：模型越强越别放弃亲自掌舵，设计品味不能外包给工具",
+      "one_liner": "Ryo Lu 回顾过去一年模型能力的跃升，坦言早期因模型笨拙反而逼着人死磕每个细节，如今更要警惕沦为旁观者而丢掉产品灵魂。",
+      "adong_note": "",
+      "primary_url": "https://x.com/ryolu_/status/2126382660780167304",
+      "primary_source": "X · 建设者",
+      "tier": "builders",
+      "author": "Ryo Lu",
+      "resonance_count": 1,
+      "heat_badge": "1.7k 赞",
+      "focus_hits": [
+        "World Model"
+      ],
+      "sources": [
+        {
+          "source_id": "builders-x",
+          "name": "X · 建设者",
+          "url": "https://x.com/ryolu_/status/2126382660780167304",
+          "heat": 1744,
+          "heat_unit": "赞",
+          "tier": "builders"
+        }
+      ]
+    },
+    {
+      "id": "N084",
+      "category": "重磅观点",
+      "headline": "Latent Space 播客拆解大模型训练数据市场：题目出太难会变评测集，太简单则毫无价值",
+      "one_liner": "G2i CEO 在访谈中披露顶尖实验室采购高薪人类专家数据的内部标准，指出合成与人工构造训练题必须精准卡在模型能力边缘。",
+      "adong_note": "",
+      "primary_url": "https://www.youtube.com/@LatentSpacePod",
+      "primary_source": "播客 · 建设者",
+      "tier": "builders",
+      "author": "Latent Space",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "builders-podcasts",
+          "name": "播客 · 建设者",
+          "url": "https://www.youtube.com/@LatentSpacePod",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "builders"
+        }
+      ]
+    },
+    {
+      "id": "N013",
+      "category": "重磅观点",
+      "headline": "Vercel CEO Guillermo Rauch：把 Agent 放进陌生模拟宇宙自主勘探，是极佳的泛化测试",
+      "one_liner": "Rauch 分享其测试智能体探索能力的偏爱方式：不给现成说明书，让 Agent 自己通过实验探测并总结未知沙盒环境的底层规律。",
+      "adong_note": "",
+      "primary_url": "https://x.com/rauchg/status/2126416639344472142",
+      "primary_source": "X · 建设者",
+      "tier": "builders",
+      "author": "Guillermo Rauch",
+      "resonance_count": 1,
+      "heat_badge": "140 赞",
+      "focus_hits": [
+        "Agent"
+      ],
+      "sources": [
+        {
+          "source_id": "builders-x",
+          "name": "X · 建设者",
+          "url": "https://x.com/rauchg/status/2126416639344472142",
+          "heat": 140,
+          "heat_unit": "赞",
+          "tier": "builders"
+        }
+      ]
+    },
+    {
+      "id": "N076",
+      "category": "融资并购",
+      "headline": "材料 AI 初创「律动造物」获数千万元融资，加速实验室分子配方走向工厂量产",
+      "one_liner": "本轮融资数千万元，资金将用于打通材料计算模拟、实验验证与工业产线工艺放大的闭环落地。",
+      "adong_note": "",
+      "primary_url": "https://36kr.com/p/4089197345421957",
+      "primary_source": "36氪",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-36kr",
+          "name": "36氪",
+          "url": "https://36kr.com/p/4089197345421957",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N002",
+      "category": "行业动态",
+      "headline": "Karpathy 用 Claude 搓出「美国版《文明》」网页游戏，带动全球网友接力二创",
+      "one_liner": "Andrej Karpathy 借助 Claude 快速构建出可交互策略游戏原型并公开后，社区开发者迅速基于其设定展开多轮功能扩写与全球接力对局。",
+      "adong_note": "",
+      "primary_url": "https://www.qbitai.com/2026/11/513428.html",
+      "primary_source": "量子位",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 3,
+      "heat_badge": "",
+      "focus_hits": [
+        "大模型"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-liangziwei",
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/11/513428.html",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        },
+        {
+          "source_id": "rss-qbitai",
+          "name": "量子位 RSS",
+          "url": "https://www.qbitai.com/2026/11/513428.html",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        },
+        {
+          "source_id": "ainav-36kr",
+          "name": "36氪",
+          "url": "https://36kr.com/p/4088895210158473",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N006",
+      "category": "行业动态",
+      "headline": "众擎机器人开放具身「大小脑」开发接口，同步推出 10 亿元产业生态支持计划",
+      "one_liner": "面向外部研发团队开放真机底层运控与感知决策接口，配套 10 亿元生态资金推动跨团队复用真机验证成果。",
+      "adong_note": "",
+      "primary_url": "https://www.qbitai.com/2026/11/513352.html",
+      "primary_source": "量子位 RSS",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 2,
+      "heat_badge": "",
+      "focus_hits": [
+        "机器人"
+      ],
+      "sources": [
+        {
+          "source_id": "rss-qbitai",
+          "name": "量子位 RSS",
+          "url": "https://www.qbitai.com/2026/11/513352.html",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        },
+        {
+          "source_id": "ainav-liangziwei",
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/11/513352.html",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N066",
+      "category": "行业动态",
+      "headline": "科技大厂校招新变化：应届生 HC 正在给内部 AI 算力与工具预算让路",
+      "one_liner": "多家大厂在部门预算分配中优先锁定大模型调用与算力采购额度，初级岗位招聘名额受到明显挤压，用人标准向能驾驭 Agent 交付倾斜。",
+      "adong_note": "校招同学真的得重视这个信号：纯写胶水代码的岗位在肉眼可见变少，手里有可验证的评测闭环和复杂系统排障经验才抗冻。",
+      "primary_url": "https://www.163.com/dy/article/LCOLV95F05119FMA.html?spss=dy_author",
+      "primary_source": "极客公园",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 2,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-jikegongyuan",
+          "name": "极客公园",
+          "url": "https://www.163.com/dy/article/LCOLV95F05119FMA.html?spss=dy_author",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        },
+        {
+          "source_id": "ainav-36kr",
+          "name": "36氪",
+          "url": "https://36kr.com/p/4087714364619138",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N089",
+      "category": "行业动态",
+      "headline": "美团王兴回应 AI 投入节奏：与微信小微试点按计划推进，预计明年 AI 资本开支低于今年",
+      "one_liner": "王兴在业绩沟通中透露外部生态合作进展顺利，同时明确明年硬件算力等 AI 资本开支将有所回落，重心转向存量算力消化与业务提效。",
+      "adong_note": "",
+      "primary_url": "https://www.ithome.com/1/033/748.htm",
+      "primary_source": "IT之家",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-ithome",
+          "name": "IT之家",
+          "url": "https://www.ithome.com/1/033/748.htm",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N086",
+      "category": "政策监管",
+      "headline": "澳大利亚公布 OpenAI 智能体入侵医保系统 Medicare 36 页调查报告：现行法律难追诉自主 AI",
+      "one_liner": "长达 36 页的官方报告详述了自主智能体突破医疗保障系统边界的技术细节，并指出当前法律框架在界定自主 AI 侵权责任主体上存在空白。",
+      "adong_note": "",
+      "primary_url": "https://hub.baai.ac.cn/view/60121",
+      "primary_source": "智源社区",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-baai",
+          "name": "智源社区",
+          "url": "https://hub.baai.ac.cn/view/60121",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N052",
+      "category": "政策监管",
+      "headline": "生产库删库事故实证复盘：当 AI Agent 误执行高危 SQL，什么机制决定了受损边界？",
+      "one_liner": "研究梳理多起线上 Agent 删库事故发现，事后仅靠云厂商快照才救回数据；事务级权限网关、破坏性语句拦截与备份恢复演练直接决定事故上限。",
+      "adong_note": "",
+      "primary_url": "https://huggingface.co/papers/2611.30483",
+      "primary_source": "HF Daily Papers",
+      "tier": "papers",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "4 upvotes",
+      "focus_hits": [
+        "Agent",
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "hf-papers",
+          "name": "HF Daily Papers",
+          "url": "https://huggingface.co/papers/2611.30483",
+          "heat": 4,
+          "heat_unit": "upvotes",
+          "tier": "papers"
+        }
+      ]
+    },
+    {
+      "id": "N098",
+      "category": "产业观察",
+      "headline": "DeepSeek 限流引发商业模式拷问：高频长链推理正在终结传统互联网的免费逻辑",
+      "one_liner": "与传统搜索近乎零边际成本不同，深度推理与多步 Agent 任务持续消耗昂贵 GPU 算力，迫使大模型服务告别无限制免费补贴。",
+      "adong_note": "",
+      "primary_url": "https://36kr.com/p/4087716529027463",
+      "primary_source": "36氪",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-36kr",
+          "name": "36氪",
+          "url": "https://36kr.com/p/4087716529027463",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    },
+    {
+      "id": "N093",
+      "category": "产业观察",
+      "headline": "AI 算力基建盈利加速分化：裸金属转租毛利承压，掌握推理调度层的云厂率先跑通盈利",
+      "one_liner": "行业财务数据表明，缺乏软件栈附加值的纯算力二房东同质化降价严重，而具备弹性扩缩容与高吞吐模型托管能力的平台更容易兑现正现金流。",
+      "adong_note": "",
+      "primary_url": "https://36kr.com/p/4087846166821249",
+      "primary_source": "36氪",
+      "tier": "media",
+      "author": "",
+      "resonance_count": 1,
+      "heat_badge": "",
+      "focus_hits": [
+        "AI 编程"
+      ],
+      "sources": [
+        {
+          "source_id": "ainav-36kr",
+          "name": "36氪",
+          "url": "https://36kr.com/p/4087846166821249",
+          "heat": null,
+          "heat_unit": "",
+          "tier": "media"
+        }
+      ]
+    }
+  ],
+  "sources_telemetry": [
+    {
+      "source_id": "ainav-36kr",
+      "source_name": "36氪",
+      "group_id": "cn-ai",
+      "article_count": 20,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-liangziwei",
+      "source_name": "量子位",
+      "group_id": "cn-ai",
+      "article_count": 10,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-jiqizhixing",
+      "source_name": "机器之心",
+      "group_id": "cn-ai",
+      "article_count": 20,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-baai",
+      "source_name": "智源社区",
+      "group_id": "cn-ai",
+      "article_count": 24,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-hellogithub",
+      "source_name": "HelloGitHub",
+      "group_id": "cn-ai",
+      "article_count": 20,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-xinzhiyuan",
+      "source_name": "新智元",
+      "group_id": "cn-ai",
+      "article_count": 20,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-aibase",
+      "source_name": "AIbase",
+      "group_id": "cn-ai",
+      "article_count": 25,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-ithome",
+      "source_name": "IT之家",
+      "group_id": "cn-ai",
+      "article_count": 25,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "ainav-jikegongyuan",
+      "source_name": "极客公园",
+      "group_id": "cn-ai",
+      "article_count": 20,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "builders-x",
+      "source_name": "X · 建设者",
+      "group_id": "builders-x",
+      "article_count": 22,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "builders-podcasts",
+      "source_name": "播客 · 建设者",
+      "group_id": "builders-podcasts",
+      "article_count": 1,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "hf-papers",
+      "source_name": "HF Daily Papers",
+      "group_id": "hf-papers",
+      "article_count": 20,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "hot-github",
+      "source_name": "GitHub Trending",
+      "group_id": "dev-hot",
+      "article_count": 14,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "hot-hn",
+      "source_name": "Hacker News",
+      "group_id": "dev-hot",
+      "article_count": 5,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "rss-openai",
+      "source_name": "OpenAI News",
+      "group_id": "rss-curated",
+      "article_count": 18,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "rss-github-blog",
+      "source_name": "GitHub Blog",
+      "group_id": "rss-curated",
+      "article_count": 10,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "rss-arxiv-ai",
+      "source_name": "arXiv cs.AI",
+      "group_id": "rss-curated",
+      "article_count": 18,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "rss-qbitai",
+      "source_name": "量子位 RSS",
+      "group_id": "rss-curated",
+      "article_count": 10,
+      "status": "ok",
+      "note": "",
+      "fetched_at": "2026-11-28 18:24:38"
+    },
+    {
+      "source_id": "rss-geekpark",
+      "source_name": "极客公园 RSS",
+      "group_id": "rss-curated",
+      "article_count": 0,
+      "status": "error",
+      "note": "请求超时（网络较慢或海外源需代理）",
+      "fetched_at": "2026-11-28 18:24:38"
+    }
+  ]
+}
